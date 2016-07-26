@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rebounce</string>
+    <string name="nouvellePartie">Nouvelle Partie</string>
+    <string name="difficulteFacile">Facile</string>
+    <string name="difficulteNormal">Normal</string>
+    <string name="difficulteDifficile">Difficile</string>
+    <string name="reprendre">Reprendre</string>
+    <string name="scores">Scores</string>
+</resources>

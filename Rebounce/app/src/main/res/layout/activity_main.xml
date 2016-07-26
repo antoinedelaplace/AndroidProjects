@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.delaplace.antoine.rebounce.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBasMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageViewTitre"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:gravity="center"
+            android:src="@drawable/logoalpha"
+            />
+
+        <Button
+            android:id="@+id/buttonNouvellePartie"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="25"
+            android:textStyle="bold"
+            android:textColor="#f5deb3"
+            android:text="@string/nouvellePartie"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupDifficulte"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="25"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonFacile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/difficulteFacile"
+                android:textStyle="bold"
+                android:textColor="#f5deb3"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulteNormal"
+                android:textStyle="bold"
+                android:textColor="#f5deb3"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonDifficile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulteDifficile"
+                android:textStyle="bold"
+                android:textColor="#f5deb3"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonReprendre"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:text="@string/reprendre"
+            android:textStyle="bold"
+            android:textColor="#f5deb3"
+            android:layout_weight="25"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
